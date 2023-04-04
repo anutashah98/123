@@ -9,13 +9,8 @@ public class PlayerMoveController : MonoBehaviour
 {
     [Range(0f, 2f)] [SerializeField] private float _speed = 1f;
     [SerializeField] private float _levelBorderX;
-    [SerializeField] private HorizontalInputController _horizontalInputProvider;
+    [SerializeField] private HorizontalInputProviderBase _horizontalInputProvider;
     
-
-    private void Update()
-    {
-        _horizontalInputProvider.OnUpdate();
-    }
 
     private void FixedUpdate()
     {

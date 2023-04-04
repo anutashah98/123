@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class AimInputProvider : IAimInputProviderBase
+    public class AimInputProvider : AimInputProviderBase
     {
         
         public override event Action OnLaunch;

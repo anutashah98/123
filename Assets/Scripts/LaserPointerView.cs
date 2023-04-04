@@ -5,7 +5,7 @@ namespace DefaultNamespace
 {
     public class LaserPointerView : MonoBehaviour
     {
-        [SerializeField]private IAimInputProviderBase _aimInputProvider;
+        [SerializeField]private AimInputProviderBase _aimInputProvider;
         
         private void Update()
         {

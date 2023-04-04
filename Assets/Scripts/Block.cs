@@ -6,6 +6,8 @@ namespace DefaultNamespace
     {
         [SerializeField] private int _hp = 5;
 
+        public bool IsDestroyed { get; private set; } = false;
+
         public void Damage(int damage)
         {
             _hp-=damage;
@@ -13,6 +15,7 @@ namespace DefaultNamespace
             if (_hp <= 0)
             {
                 Destroy(gameObject);
+                IsDestroyed = true;
             }
         }
     }

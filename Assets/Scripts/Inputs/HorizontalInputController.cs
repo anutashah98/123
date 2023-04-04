@@ -2,11 +2,11 @@
 
 namespace DefaultNamespace
 {
-    public class HorizontalInputController : IHorizontalInputProviderBase
+    public class HorizontalInputController : HorizontalInputProviderBase
     {
         private float _horizontalInput;
 
-        public override void OnUpdate()
+        private void Update()
         {
             _horizontalInput = Input.GetAxis("Horizontal");
             
