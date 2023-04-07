@@ -37,6 +37,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 12a4cf7714a80724abff0e08723f957d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: 12a4cf7714a80724abff0e08723f957d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Normal:
         m_Texture: {fileID: 2800000, guid: 5e6d4d008f3f3cf4e8f6d30343e6adb8, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -59,12 +63,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Emission: 0
+    - _Emission: 2
     - _Metallic: 0
-    - _NormalIntensity: 3.26
+    - _NormalIntensity: 2.93
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smothness: 0.08
+    - _Smothness: 0.14
     m_Colors:
-    - _LavaColor: {r: 1, g: 0.36068773, b: 0, a: 0}
+    - _AnimationDirection: {r: 0.87, g: 0, b: 0, a: 0}
+    - _LavaColor: {r: 1, g: 0.3936202, b: 0, a: 0}
+    - _Vector2: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
