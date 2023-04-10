@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using DefaultNamespace.UI;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
     public class Block : MonoBehaviour
     {
-        [SerializeField] private int _hp = 5;
+        [SerializeField] private ElementName _elementName;
+        [SerializeField] private int _hp = 3;
 
         public bool IsDestroyed { get; private set; } = false;
 
