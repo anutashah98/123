@@ -703,7 +703,7 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: -14.166564, y: 13.761803}
   m_ConnectedAnchor: {x: 0.036471367, y: 5.2231436}
   m_UseMotor: 1
@@ -1163,6 +1163,10 @@ PrefabInstance:
       propertyPath: _text
       value: 
       objectReference: {fileID: 656839897}
+    - target: {fileID: 7983836870386379270, guid: 1f419ce15551c514ebff53197a0c7a62, type: 3}
+      propertyPath: _elements
+      value: 
+      objectReference: {fileID: 11400000, guid: cb72063cf7dadd647bb43a3f062a4742, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f419ce15551c514ebff53197a0c7a62, type: 3}
 --- !u!1 &1259767892

@@ -8,5 +8,6 @@ namespace DefaultNamespace.UI
     {
         public ElementName Name;
         public Material Material;
+        public string LayerName = "Default";
     }
 }
