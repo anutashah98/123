@@ -11,6 +11,8 @@ namespace DefaultNamespace
         [SerializeField] private ElementName _firstElement = ElementName.Fire;
         
         [SerializeField] private float _constantSpeed = 10f;
+        
+        private Rigidbody2D _rigidbody;
 
         private ElementConfig _currentElement;
 
@@ -18,6 +20,7 @@ namespace DefaultNamespace
         private void Awake()
         {
             ChangeElement(_firstElement);
+            _rigidbody = GetComponent<Rigidbody2D>();
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
@@ -42,9 +45,17 @@ namespace DefaultNamespace
             {
                 BallsManager.Instance.DestroyBall(this);
             }
-            
-            
-            
+        }
+        
+        
+        private void FixedUpdate()
+        {
+            var currentVel = _rigidbody.velocity;
+
+            if (currentVel.magnitude < _constantSpeed)
+            {
+                _rigidbody.velocity = _rigidbody.velocity.normalized * _constantSpeed;
+            }
         }
 
         private void ChangeElement(ElementName otherElement)
